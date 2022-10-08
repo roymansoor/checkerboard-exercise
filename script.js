@@ -34,59 +34,59 @@
 // Second Step Random Colors 
 
 
-for (var i =0; i < 63 ; i++ ){
-    createTileRandom()
-}
+// for (var i =0; i < 63 ; i++ ){
+//     createTileRandom()
+// }
 
-function createTileRandom(){
-var tile = document.createElement('div')
-var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-tile.style.width = '11.1%'; 
-tile.style.paddingBottom= '11.1%'; 
-tile.style.backgroundColor = randomColor;
-tile.style.cssFloat = 'left';
-document.body.appendChild(tile)
-}
+// function createTileRandom(){
+// var tile = document.createElement('div')
+// var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+// tile.style.width = '11.1%'; 
+// tile.style.paddingBottom= '11.1%'; 
+// tile.style.backgroundColor = randomColor;
+// tile.style.cssFloat = 'left';
+// document.body.appendChild(tile)
+// }
 
 
 
 // Third Step Gradient 
 
 
-// for (var i = 0; i < 63; i++){
-//     if(i % 2 === 0){
-//     createTileBlack()
-//     } else {
-//     createTileRed()
-//     }
-// }
-// changeBackgroundColor()
+for (var i = 0; i < 63; i++){
+    if(i % 2 === 0){
+    createTileBlack()
+    } else {
+    createTileRed()
+    }
+}
+changeBackgroundColor()
 
-// //document.body.style.backgroundColor ='yellow'
-// function createTileBlack(){
-//     var tile = document.createElement('div')
-//     tile.style.width = '11.1%'; 
-//     tile.style.paddingBottom= '11.1%'; 
-//     tile.style.backgroundColor = 'black';
-//     tile.style.cssFloat = 'left';
-//     tile.style.opacity ='0.3'
-//     document.body.appendChild(tile)
+//document.body.style.backgroundColor ='yellow'
+function createTileBlack(){
+    var tile = document.createElement('div')
+    tile.style.width = '11.1%'; 
+    tile.style.paddingBottom= '11.1%'; 
+    tile.style.backgroundColor = 'black';
+    tile.style.cssFloat = 'left';
+    tile.style.opacity ='0.3'
+    document.body.appendChild(tile)
 
-// }
+}
 
-// function createTileRed(){
-//     var tile = document.createElement('div')
-//     tile.style.width = '11.1%'; 
-//     tile.style.paddingBottom= '11.1%'; 
-//     tile.style.backgroundColor = 'red';
-//     tile.style.cssFloat = 'left';
-//     tile.style.opacity ='0.3'
-//     document.body.appendChild(tile)
+function createTileRed(){
+    var tile = document.createElement('div')
+    tile.style.width = '11.1%'; 
+    tile.style.paddingBottom= '11.1%'; 
+    tile.style.backgroundColor = 'red';
+    tile.style.cssFloat = 'left';
+    tile.style.opacity ='0.3'
+    document.body.appendChild(tile)
 
-// }
+}
     
-// function changeBackgroundColor() {
-//     document.body.style.backgroundImage = "linear-gradient(to bottom, blue, white)"}
+function changeBackgroundColor() {
+     document.body.style.backgroundImage = "linear-gradient(to bottom, blue, white)"}
 
 
 // Step four Flashing
